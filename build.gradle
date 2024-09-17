@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'org.openrewrite.rewrite' version 'latest.release'
+}
+
+group = 'com.shutch.openrewrite'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+rewrite {
+    activeRecipe('com.si.ChangeDependencyExample')
+}

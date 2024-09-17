@@ -1,0 +1,10 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.si.ChangeDependencyExample
+displayName: Change Gradle dependency example
+recipeList:
+  - org.openrewrite.gradle.ChangeDependency:
+      oldGroupId: javax.servlet
+      oldArtifactId: javax.servlet-api
+      newGroupId: jakarta.servlet
+      newArtifactId: jakarta.servlet-api
+      newVersion: 6.1.0
